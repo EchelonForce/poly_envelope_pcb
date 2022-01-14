@@ -1,0 +1,519 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 15
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:AudioJack3 J?
+U 1 1 61EFBC61
+P 3400 3750
+AR Path="/61EFBC61" Ref="J?"  Part="1" 
+AR Path="/61C20F63/61EFBC61" Ref="J?"  Part="1" 
+AR Path="/61C20F63/61EED45E/61EFBC61" Ref="J9"  Part="1" 
+F 0 "J9" H 3382 4075 50  0000 C CNN
+F 1 "Sustain_IN" H 3382 3984 50  0000 C CNN
+F 2 "My Stuff:Jack_2.5mm_MJ-355W_Vertical" H 3400 3750 50  0001 C CNN
+F 3 "~" H 3400 3750 50  0001 C CNN
+	1    3400 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 3750 3600 3650
+Text HLabel 7650 3750 2    50   Output ~ 0
+Sustain_0_5V
+Text Notes 6850 3100 0    50   ~ 0
+https://tinyurl.com/y6jkg6v4
+$Comp
+L Amplifier_Operational:LM358 U?
+U 1 1 61EFBC6A
+P 6050 3750
+AR Path="/61EFBC6A" Ref="U?"  Part="1" 
+AR Path="/61C20F63/61EFBC6A" Ref="U?"  Part="1" 
+AR Path="/61C20F63/61EED45E/61EFBC6A" Ref="U5"  Part="1" 
+F 0 "U5" H 6150 3900 50  0000 C CNN
+F 1 "LM358" H 6000 3750 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 6050 3750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 6050 3750 50  0001 C CNN
+	1    6050 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61EFBC70
+P 5500 3850
+AR Path="/61EFBC70" Ref="R?"  Part="1" 
+AR Path="/61C20F63/61EFBC70" Ref="R?"  Part="1" 
+AR Path="/61C20F63/61EED45E/61EFBC70" Ref="R51"  Part="1" 
+F 0 "R51" V 5400 3850 50  0000 C CNN
+F 1 "200k" V 5600 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 5430 3850 50  0001 C CNN
+F 3 "~" H 5500 3850 50  0001 C CNN
+	1    5500 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61EFBC76
+P 6100 4000
+AR Path="/61EFBC76" Ref="R?"  Part="1" 
+AR Path="/61C20F63/61EFBC76" Ref="R?"  Part="1" 
+AR Path="/61C20F63/61EED45E/61EFBC76" Ref="R53"  Part="1" 
+F 0 "R53" V 6000 4000 50  0000 C CNN
+F 1 "100k" V 6200 4000 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 6030 4000 50  0001 C CNN
+F 3 "~" H 6100 4000 50  0001 C CNN
+	1    6100 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 3850 5700 3850
+Wire Wire Line
+	6350 3750 6350 4000
+Wire Wire Line
+	6350 4000 6250 4000
+Wire Wire Line
+	5950 4000 5700 4000
+Wire Wire Line
+	5700 4000 5700 3850
+Connection ~ 5700 3850
+Wire Wire Line
+	5700 3850 5750 3850
+Wire Wire Line
+	6350 3750 6500 3750
+Connection ~ 6350 3750
+$Comp
+L power:GND #PWR?
+U 1 1 61EFBC85
+P 3700 3650
+AR Path="/61EFBC85" Ref="#PWR?"  Part="1" 
+AR Path="/61C20F63/61EFBC85" Ref="#PWR?"  Part="1" 
+AR Path="/61C20F63/61EED45E/61EFBC85" Ref="#PWR049"  Part="1" 
+F 0 "#PWR049" H 3700 3400 50  0001 C CNN
+F 1 "GND" H 3705 3477 50  0000 C CNN
+F 2 "" H 3700 3650 50  0001 C CNN
+F 3 "" H 3700 3650 50  0001 C CNN
+	1    3700 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3650 3600 3650
+Wire Wire Line
+	4950 3850 5000 3850
+$Comp
+L Device:D D?
+U 1 1 61EFBC8D
+P 5150 3850
+AR Path="/61EFBC8D" Ref="D?"  Part="1" 
+AR Path="/61C20F63/61EFBC8D" Ref="D?"  Part="1" 
+AR Path="/61C20F63/61EED45E/61EFBC8D" Ref="D11"  Part="1" 
+F 0 "D11" H 5150 3633 50  0000 C CNN
+F 1 "D" H 5150 3724 50  0000 C CNN
+F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 5150 3850 50  0001 C CNN
+F 3 "~" H 5150 3850 50  0001 C CNN
+	1    5150 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61EFBC93
+P 4800 3850
+AR Path="/61EFBC93" Ref="R?"  Part="1" 
+AR Path="/61C20F63/61EFBC93" Ref="R?"  Part="1" 
+AR Path="/61C20F63/61EED45E/61EFBC93" Ref="R48"  Part="1" 
+F 0 "R48" V 5007 3850 50  0000 C CNN
+F 1 "1k" V 4916 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4730 3850 50  0001 C CNN
+F 3 "~" H 4800 3850 50  0001 C CNN
+	1    4800 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61EFBC99
+P 3850 3450
+AR Path="/61C20F63/61EFBC99" Ref="R?"  Part="1" 
+AR Path="/61C20F63/61EED45E/61EFBC99" Ref="R46"  Part="1" 
+F 0 "R46" V 4057 3450 50  0000 C CNN
+F 1 "10k" V 3966 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 3780 3450 50  0001 C CNN
+F 3 "~" H 3850 3450 50  0001 C CNN
+	1    3850 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61EFBC9F
+P 4950 3450
+AR Path="/61C20F63/61EFBC9F" Ref="R?"  Part="1" 
+AR Path="/61C20F63/61EED45E/61EFBC9F" Ref="R49"  Part="1" 
+F 0 "R49" V 5157 3450 50  0000 C CNN
+F 1 "10k" V 5066 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4880 3450 50  0001 C CNN
+F 3 "~" H 4950 3450 50  0001 C CNN
+	1    4950 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_POT R_Sustain?
+U 1 1 61EFBCA5
+P 4200 3450
+AR Path="/61C20F63/61EFBCA5" Ref="R_Sustain?"  Part="1" 
+AR Path="/61C20F63/61EED45E/61EFBCA5" Ref="R_Sustain1"  Part="1" 
+F 0 "R_Sustain1" V 3993 3450 50  0000 C CNN
+F 1 "100k" V 4084 3450 50  0000 C CNN
+F 2 "My Stuff:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical_w_3d" H 4200 3450 50  0001 C CNN
+F 3 "~" H 4200 3450 50  0001 C CNN
+	1    4200 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61EFBCAB
+P 5350 3450
+AR Path="/61C20F63/61EFBCAB" Ref="R?"  Part="1" 
+AR Path="/61C20F63/61EED45E/61EFBCAB" Ref="R50"  Part="1" 
+F 0 "R50" V 5557 3450 50  0000 C CNN
+F 1 "39k" V 5466 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 5280 3450 50  0001 C CNN
+F 3 "~" H 5350 3450 50  0001 C CNN
+	1    5350 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61EFBCB1
+P 6050 3450
+AR Path="/61C20F63/61EFBCB1" Ref="R?"  Part="1" 
+AR Path="/61C20F63/61EED45E/61EFBCB1" Ref="R52"  Part="1" 
+F 0 "R52" V 6257 3450 50  0000 C CNN
+F 1 "39k" V 6166 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 5980 3450 50  0001 C CNN
+F 3 "~" H 6050 3450 50  0001 C CNN
+	1    6050 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 61EFBCB7
+P 5700 3450
+AR Path="/61C20F63/61EFBCB7" Ref="RV?"  Part="1" 
+AR Path="/61C20F63/61EED45E/61EFBCB7" Ref="RV4"  Part="1" 
+F 0 "RV4" V 5493 3450 50  0000 C CNN
+F 1 "1k" V 5584 3450 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" H 5700 3450 50  0001 C CNN
+F 3 "~" H 5700 3450 50  0001 C CNN
+	1    5700 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 3850 5350 3850
+Wire Wire Line
+	4000 3450 4050 3450
+Wire Wire Line
+	5500 3450 5550 3450
+Wire Wire Line
+	5850 3450 5900 3450
+Wire Wire Line
+	5700 3600 5700 3650
+Wire Wire Line
+	5700 3650 5750 3650
+$Comp
+L power:+12V #PWR?
+U 1 1 61EFBCC3
+P 3700 3450
+AR Path="/61C20F63/61EFBCC3" Ref="#PWR?"  Part="1" 
+AR Path="/61C20F63/61EED45E/61EFBCC3" Ref="#PWR048"  Part="1" 
+F 0 "#PWR048" H 3700 3300 50  0001 C CNN
+F 1 "+12V" H 3715 3623 50  0000 C CNN
+F 2 "" H 3700 3450 50  0001 C CNN
+F 3 "" H 3700 3450 50  0001 C CNN
+	1    3700 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 61EFBCC9
+P 6300 3450
+AR Path="/61C20F63/61EFBCC9" Ref="#PWR?"  Part="1" 
+AR Path="/61C20F63/61EED45E/61EFBCC9" Ref="#PWR054"  Part="1" 
+F 0 "#PWR054" H 6300 3300 50  0001 C CNN
+F 1 "+12V" H 6315 3623 50  0000 C CNN
+F 2 "" H 6300 3450 50  0001 C CNN
+F 3 "" H 6300 3450 50  0001 C CNN
+	1    6300 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR?
+U 1 1 61EFBCCF
+P 5150 3450
+AR Path="/61C20F63/61EFBCCF" Ref="#PWR?"  Part="1" 
+AR Path="/61C20F63/61EED45E/61EFBCCF" Ref="#PWR052"  Part="1" 
+F 0 "#PWR052" H 5150 3550 50  0001 C CNN
+F 1 "-12V" H 5165 3623 50  0000 C CNN
+F 2 "" H 5150 3450 50  0001 C CNN
+F 3 "" H 5150 3450 50  0001 C CNN
+	1    5150 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3450 5150 3450
+Wire Wire Line
+	5150 3450 5100 3450
+Connection ~ 5150 3450
+$Comp
+L Device:R R?
+U 1 1 61EFBCD8
+P 4550 3450
+AR Path="/61C20F63/61EFBCD8" Ref="R?"  Part="1" 
+AR Path="/61C20F63/61EED45E/61EFBCD8" Ref="R47"  Part="1" 
+F 0 "R47" V 4757 3450 50  0000 C CNN
+F 1 "100k" V 4666 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4480 3450 50  0001 C CNN
+F 3 "~" H 4550 3450 50  0001 C CNN
+	1    4550 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3600 3850 4200 3850
+Connection ~ 5000 3850
+Wire Wire Line
+	5000 3850 5200 3850
+Wire Wire Line
+	4350 3450 4400 3450
+Wire Wire Line
+	4700 3450 4800 3450
+Wire Wire Line
+	4200 3600 4200 3850
+Connection ~ 4200 3850
+Wire Wire Line
+	4200 3850 4650 3850
+$Comp
+L Amplifier_Operational:LM358 U?
+U 2 1 61EFBCE6
+P 7200 3750
+AR Path="/61EFBCE6" Ref="U?"  Part="1" 
+AR Path="/61C20F63/61EFBCE6" Ref="U?"  Part="2" 
+AR Path="/61C20F63/61EED45E/61EFBCE6" Ref="U5"  Part="2" 
+F 0 "U5" H 7300 3900 50  0000 C CNN
+F 1 "LM358" H 7150 3750 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 7200 3750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 7200 3750 50  0001 C CNN
+	2    7200 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61EFBCEC
+P 6650 3850
+AR Path="/61EFBCEC" Ref="R?"  Part="1" 
+AR Path="/61C20F63/61EFBCEC" Ref="R?"  Part="1" 
+AR Path="/61C20F63/61EED45E/61EFBCEC" Ref="R55"  Part="1" 
+F 0 "R55" V 6550 3850 50  0000 C CNN
+F 1 "100k" V 6750 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 6580 3850 50  0001 C CNN
+F 3 "~" H 6650 3850 50  0001 C CNN
+	1    6650 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61EFBCF2
+P 7250 4000
+AR Path="/61EFBCF2" Ref="R?"  Part="1" 
+AR Path="/61C20F63/61EFBCF2" Ref="R?"  Part="1" 
+AR Path="/61C20F63/61EED45E/61EFBCF2" Ref="R57"  Part="1" 
+F 0 "R57" V 7150 4000 50  0000 C CNN
+F 1 "100k" V 7350 4000 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 7180 4000 50  0001 C CNN
+F 3 "~" H 7250 4000 50  0001 C CNN
+	1    7250 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6800 3850 6850 3850
+Wire Wire Line
+	7500 3750 7500 4000
+Wire Wire Line
+	7500 4000 7400 4000
+Wire Wire Line
+	7100 4000 6850 4000
+Wire Wire Line
+	6850 4000 6850 3850
+Connection ~ 6850 3850
+Wire Wire Line
+	6850 3850 6900 3850
+Wire Wire Line
+	7500 3750 7650 3750
+Connection ~ 7500 3750
+$Comp
+L Device:R R?
+U 1 1 61EFBD01
+P 6500 3450
+AR Path="/61C20F63/61EFBD01" Ref="R?"  Part="1" 
+AR Path="/61C20F63/61EED45E/61EFBD01" Ref="R54"  Part="1" 
+F 0 "R54" V 6707 3450 50  0000 C CNN
+F 1 "39k" V 6616 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 6430 3450 50  0001 C CNN
+F 3 "~" H 6500 3450 50  0001 C CNN
+	1    6500 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61EFBD07
+P 7200 3450
+AR Path="/61C20F63/61EFBD07" Ref="R?"  Part="1" 
+AR Path="/61C20F63/61EED45E/61EFBD07" Ref="R56"  Part="1" 
+F 0 "R56" V 7407 3450 50  0000 C CNN
+F 1 "39k" V 7316 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 7130 3450 50  0001 C CNN
+F 3 "~" H 7200 3450 50  0001 C CNN
+	1    7200 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 61EFBD0D
+P 6850 3450
+AR Path="/61C20F63/61EFBD0D" Ref="RV?"  Part="1" 
+AR Path="/61C20F63/61EED45E/61EFBD0D" Ref="RV5"  Part="1" 
+F 0 "RV5" V 6643 3450 50  0000 C CNN
+F 1 "1k" V 6734 3450 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" H 6850 3450 50  0001 C CNN
+F 3 "~" H 6850 3450 50  0001 C CNN
+	1    6850 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6650 3450 6700 3450
+Wire Wire Line
+	7000 3450 7050 3450
+Wire Wire Line
+	6500 3750 6500 3850
+$Comp
+L power:-12V #PWR?
+U 1 1 61EFBD16
+P 7350 3450
+AR Path="/61C20F63/61EFBD16" Ref="#PWR?"  Part="1" 
+AR Path="/61C20F63/61EED45E/61EFBD16" Ref="#PWR055"  Part="1" 
+F 0 "#PWR055" H 7350 3550 50  0001 C CNN
+F 1 "-12V" H 7365 3623 50  0000 C CNN
+F 2 "" H 7350 3450 50  0001 C CNN
+F 3 "" H 7350 3450 50  0001 C CNN
+	1    7350 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3450 6300 3450
+Connection ~ 6300 3450
+Wire Wire Line
+	6300 3450 6200 3450
+Wire Wire Line
+	6850 3600 6850 3650
+Wire Wire Line
+	6850 3650 6900 3650
+Connection ~ 5000 5200
+Connection ~ 5000 4600
+Wire Wire Line
+	5000 5200 5450 5200
+Wire Wire Line
+	5000 4900 5450 4900
+Wire Wire Line
+	5000 4600 5450 4600
+$Comp
+L Device:C C?
+U 1 1 6200CFDA
+P 5450 4750
+AR Path="/61BFCE52/6200CFDA" Ref="C?"  Part="1" 
+AR Path="/61C20F63/61EED45E/6200CFDA" Ref="C13"  Part="1" 
+F 0 "C13" H 5335 4704 50  0000 R CNN
+F 1 "10nF" H 5335 4795 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 5488 4600 50  0001 C CNN
+F 3 "~" H 5450 4750 50  0001 C CNN
+	1    5450 4750
+	-1   0    0    1   
+$EndComp
+Connection ~ 5450 4900
+$Comp
+L power:GND #PWR?
+U 1 1 6200CFE1
+P 5550 4900
+AR Path="/61BFCE52/6200CFE1" Ref="#PWR?"  Part="1" 
+AR Path="/61C20F63/61EED45E/6200CFE1" Ref="#PWR053"  Part="1" 
+F 0 "#PWR053" H 5550 4650 50  0001 C CNN
+F 1 "GND" H 5555 4727 50  0000 C CNN
+F 2 "" H 5550 4900 50  0001 C CNN
+F 3 "" H 5550 4900 50  0001 C CNN
+	1    5550 4900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5450 4900 5550 4900
+$Comp
+L Device:C C?
+U 1 1 6200CFE8
+P 5450 5050
+AR Path="/61BFCE52/6200CFE8" Ref="C?"  Part="1" 
+AR Path="/61C20F63/61EED45E/6200CFE8" Ref="C14"  Part="1" 
+F 0 "C14" H 5335 5004 50  0000 R CNN
+F 1 "10nF" H 5335 5095 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 5488 4900 50  0001 C CNN
+F 3 "~" H 5450 5050 50  0001 C CNN
+	1    5450 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 6200CFEE
+P 5000 4600
+AR Path="/61C20F63/6200CFEE" Ref="#PWR?"  Part="1" 
+AR Path="/61C20F63/61D97BAE/6200CFEE" Ref="#PWR?"  Part="1" 
+AR Path="/61C20F63/61EED45E/6200CFEE" Ref="#PWR050"  Part="1" 
+F 0 "#PWR050" H 5000 4450 50  0001 C CNN
+F 1 "+12V" H 5015 4773 50  0000 C CNN
+F 2 "" H 5000 4600 50  0001 C CNN
+F 3 "" H 5000 4600 50  0001 C CNN
+	1    5000 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR?
+U 1 1 6200CFF4
+P 5000 5200
+AR Path="/61C20F63/6200CFF4" Ref="#PWR?"  Part="1" 
+AR Path="/61C20F63/61D97BAE/6200CFF4" Ref="#PWR?"  Part="1" 
+AR Path="/61C20F63/61EED45E/6200CFF4" Ref="#PWR051"  Part="1" 
+F 0 "#PWR051" H 5000 5300 50  0001 C CNN
+F 1 "-12V" H 5015 5373 50  0000 C CNN
+F 2 "" H 5000 5200 50  0001 C CNN
+F 3 "" H 5000 5200 50  0001 C CNN
+	1    5000 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U?
+U 3 1 6200CFFA
+P 5100 4900
+AR Path="/6200CFFA" Ref="U?"  Part="1" 
+AR Path="/61C20F63/6200CFFA" Ref="U?"  Part="3" 
+AR Path="/61C20F63/61D97BAE/6200CFFA" Ref="U?"  Part="3" 
+AR Path="/61C20F63/61EED45E/6200CFFA" Ref="U5"  Part="3" 
+F 0 "U5" H 5150 5050 50  0000 C CNN
+F 1 "LM358" H 5050 4900 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 5100 4900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 5100 4900 50  0001 C CNN
+	3    5100 4900
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
