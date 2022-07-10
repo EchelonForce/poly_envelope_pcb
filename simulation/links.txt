@@ -1,0 +1,18 @@
+Gate Circuit
+https://tinyurl.com/y698882h
+
+Attack/Decay/Release input circuit
+ Several iterations to get the requirements met… 
+ v1 https://tinyurl.com/y2wbhcmq
+ v2 https://tinyurl.com/y38jyy4m
+https://tinyurl.com/y2fxmhjr
+
+Sustain input circuit
+ v1 https://tinyurl.com/y3oufvc7
+ v2 https://tinyurl.com/yxkeuo7r
+https://tinyurl.com/y4ymwr3d
+
+Outputs
+  v1 https://tinyurl.com/y65lgb3s
+  v2 https://tinyurl.com/y6kkxlcb
+https://tinyurl.com/yxl5dgb4
